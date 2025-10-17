@@ -8,7 +8,10 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: 'https://imgine-ai-1-0.onrender.com',
+    methods: ['GET', 'POST' , 'PUT', 'DELETE'],
+}));
 app.use(express.json());
 
 app.use("/api" , require("./routes/aiRoute.js"));
