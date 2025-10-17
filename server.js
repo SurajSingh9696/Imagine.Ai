@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'https://imgine-ai-1-0.onrender.com',
+    origin: 'https://imagine-ai-lite.onrender.com',
     methods: ['GET', 'POST' , 'PUT', 'DELETE'],
 }));
 app.use(express.json());
